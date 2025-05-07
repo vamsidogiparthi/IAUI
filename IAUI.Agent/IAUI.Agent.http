@@ -1,0 +1,6 @@
+@IAUI.Agent_HostAddress = http://localhost:5227
+
+GET {{IAUI.Agent_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
