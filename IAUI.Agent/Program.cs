@@ -27,6 +27,7 @@ builder.Services.Configure<IAUIStoreDatabaseConfiguration>(
 
 builder.Services.AddSingleton<IIAUIDatabaseService, IAUIDatabaseService>();
 builder.Services.AddSingleton<IDataSeeder, DataSeeder>();
+builder.Services.AddSingleton<IProfileScoringService, ProfileScoringService>();
 
 // var kernelBuilder = builder.Services.AddKernel();
 
@@ -42,13 +43,13 @@ builder.Services.AddSingleton<IChatCompletionService>(sp =>
 builder.Services.AddSingleton<TimePlugin>();
 builder.Services.AddSingleton<ProfileDataFetchPlugin>();
 builder.Services.AddKeyedSingleton<ProfileScoringPlugin>(nameof(ProfileScoringPlugin));
-builder.Services.AddKeyedSingleton<Kernel>(
+builder.Services.AddKeyedTransient(
     "IAUIKKernel",
     (sp, key) =>
     {
         KernelPluginCollection kernelFunctions = [];
         kernelFunctions.AddFromObject(sp.GetRequiredService<TimePlugin>());
-        kernelFunctions.AddFromObject(sp.GetRequiredService<ProfileDataFetchPlugin>());
+        //kernelFunctions.AddFromObject(sp.GetRequiredService<ProfileDataFetchPlugin>());
         kernelFunctions.AddFromObject(
             sp.GetRequiredKeyedService<ProfileScoringPlugin>(nameof(ProfileScoringPlugin))
         );
@@ -67,4 +68,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-await app.Services.GetRequiredService<IDataSeeder>().SeedData();
+// await app.Services.GetRequiredService<IDataSeeder>().SeedData();
+//await app.Services.GetRequiredService<IDataSeeder>().SeedData();
+await app
+    .Services.GetRequiredService<IProfileScoringService>()
+    .CalculateProfileScoresForAllUserProfile();
