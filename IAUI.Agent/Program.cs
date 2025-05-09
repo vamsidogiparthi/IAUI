@@ -69,7 +69,6 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 // await app.Services.GetRequiredService<IDataSeeder>().SeedData();
-//await app.Services.GetRequiredService<IDataSeeder>().SeedData();
 await app
     .Services.GetRequiredService<IProfileScoringService>()
     .CalculateProfileScoresForAllUserProfile();

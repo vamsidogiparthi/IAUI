@@ -5,11 +5,11 @@ template: |
       You are an intelligent AI machine learning model that implement neural network algorithms to 
       analyze user profile data and provide a score based on the given criteria.
       Your task is to evaluate the user profile and provide a score based on the following criteria:
-      - user age
+      - user age calculated from the date of birth
       - user login history      
-      - user login frequency      
-      - user active login time in minutes
-      - userId      
+      - user login frequency (should be calculated from the login history)      
+      - user active login time in minutes (should be calculated from the login history)
+      - Id      
       The score should be a number between 0 and 100, where 0 is the lowest score and 100 is the highest score.
       The scores should be categorized into the following ranges:
       - 0-20: Very Low
@@ -22,82 +22,333 @@ template: |
       What algorithms did you use to calculate the score? Use only one algorithm to calculate the score.
 
       The user profile data is as follows:
-      - user DOB: {{user.DOB}}
-      - user login history: {{user.login_history}}
-      - user login frequency: {{user.login_frequency}}
-      - user active login time in minutes: {{user.active_login_times}}
-      - userId: {{user.userId}}
+      - user DOB: {{user.DateOfBirth}}
+      - user login history: {{user.LoginHistory}}     
+      - userId: {{user.Id}}
+      - user Login frequency: {{user.LoginTimes}}
+      - user active login time in minutes: {{user.ActiveLoginTime}}
 
-      The output should be in the following format:
-      {
-        "score": <score>,
-        "category": <category>,
-        "reasoning": <reasoning>
-        "algorithm": <algorithms>,
-        "userId": <userId>
-      }
       # Example Input:
       {
-        "DOB": "1990-01-01",
-        "login_history": [
+        "Id": 1
+        "Name": "User1",
+        "Email": "user1@example.com",
+        "PhoneNumber": "+11169704198",
+        "DateOfBirth": {
+          "$date": "1978-11-05T03:22:07.566Z"
+        },
+        "Address": {
+          "LocationId": {
+            "$numberLong": "2"
+          },
+          "City": "London",
+          "State": "",
+          "Country": "UK",
+          "ZipCode": "EC1A",
+          "Latitude": 51.5074,
+          "Longitude": -0.1278,
+          "AddressLine1": "456 High St",
+          "AddressLine2": null,
+          "Landmark": "Close to Big Ben",
+          "TimeZone": "Europe/London"
+        },
+        "AccountCreationDate": {
+          "$date": "2025-01-10T03:22:07.568Z"
+        },
+        "LoginHistory": [],
+        "ProfileScores": []
+      }
+      #Example Input 2:
+      {
+        "Id": 4,
+        "Name": "User4",
+        "Email": "user4@example.com",
+        "PhoneNumber": "+11383566909",
+        "DateOfBirth": {
+          "$date": "1992-05-09T02:22:07.733Z"
+        },
+        "Address": {
+          "LocationId": {
+            "$numberLong": "1"
+          },
+          "City": "New York",
+          "State": "NY",
+          "Country": "USA",
+          "ZipCode": "10001",
+          "Latitude": 40.7128,
+          "Longitude": -74.006,
+          "AddressLine1": "123 Main St",
+          "AddressLine2": "Apt 4B",
+          "Landmark": "Near Central Park",
+          "TimeZone": "America/New_York"
+        },
+        "AccountCreationDate": {
+          "$date": "2025-01-13T03:22:07.733Z"
+        },
+        "LoginHistory": [
           {
-            "userId": "12345",
-            "loginTime": "2023-01-01T10:00:00Z",
-            "ipAddress": "192.168.1.1",
-            "deviceInfo": {
-              "deviceName": "iPhone 13",
-              "os": "iOS 16"
+            "UserId": {
+              "$numberLong": "4"
             },
-            "loginLocation": {
-              "latitude": 37.7749,
-              "longitude": -122.4194
+            "LoginId": {
+              "$numberLong": "338220"
             },
-            "pagesVisited": [
+            "LoginTime": {
+              "$date": "2024-04-26T15:22:07.733Z"
+            },
+            "LogoutTime": {
+              "$date": "2024-04-26T16:24:07.733Z"
+            },
+            "SessionId": "5c7c4fc0-e324-47f4-ac40-8af3e9459d89",
+            "IpAddress": "177.129.89.125",
+            "DeviceInfo": {
+              "DeviceId": {
+                "$numberLong": "1"
+              },
+              "DeviceName": "Device-1",
+              "DeviceType": "Desktop",
+              "OperatingSystem": "Android",
+              "Browser": "Safari",
+              "LastActive": {
+                "$date": "2024-04-26T15:22:07.733Z"
+              }
+            },
+            "LoginLocation": {
+              "LocationId": {
+                "$numberLong": "1"
+              },
+              "City": "New York",
+              "State": "NY",
+              "Country": "USA",
+              "ZipCode": "10001",
+              "Latitude": 40.7128,
+              "Longitude": -74.006,
+              "AddressLine1": "123 Main St",
+              "AddressLine2": "Apt 4B",
+              "Landmark": "Near Central Park",
+              "TimeZone": "America/New_York"
+            },
+            "PagesVisited": [
               {
-                "pageName": "HomePage",
-                "visitDuration": 120
+                "PageId": {
+                  "$numberLong": "1"
+                },
+                "PageUrl": "https://example.com/profile",
+                "Title": "Profile"
               },
               {
-                "pageName": "ProfilePage",
-                "visitDuration": 60
+                "PageId": {
+                  "$numberLong": "2"
+                },
+                "PageUrl": "https://example.com/reports",
+                "Title": "Reports"
+              },
+              {
+                "PageId": {
+                  "$numberLong": "3"
+                },
+                "PageUrl": "https://example.com/settings",
+                "Title": "Settings"
+              },
+              {
+                "PageId": {
+                  "$numberLong": "4"
+                },
+                "PageUrl": "https://example.com/settings",
+                "Title": "Settings"
+              },
+              {
+                "PageId": {
+                  "$numberLong": "5"
+                },
+                "PageUrl": "https://example.com/profile",
+                "Title": "Profile"
               }
             ]
           },
           {
-            "userId": "12345",
-            "loginTime": "2023-02-01T12:00:00Z",
-            "ipAddress": "192.168.1.2",
-            "deviceInfo": {
-              "deviceName": "Samsung Galaxy S22",
-              "os": "Android 13"
+            "UserId": {
+              "$numberLong": "4"
             },
-            "loginLocation": {
-              "latitude": 40.7128,
-              "longitude": -74.0060
+            "LoginId": {
+              "$numberLong": "267002"
             },
-            "pagesVisited": [
+            "LoginTime": {
+              "$date": "2024-11-12T19:29:07.733Z"
+            },
+            "LogoutTime": {
+              "$date": "2024-11-12T20:04:07.733Z"
+            },
+            "SessionId": "01416faf-1397-4ed9-a2d2-eb532fcbc912",
+            "IpAddress": "170.184.250.85",
+            "DeviceInfo": {
+              "DeviceId": {
+                "$numberLong": "2"
+              },
+              "DeviceName": "Device-2",
+              "DeviceType": "iPad",
+              "OperatingSystem": "Android",
+              "Browser": "Safari",
+              "LastActive": {
+                "$date": "2024-11-12T19:29:07.733Z"
+              }
+            },
+            "LoginLocation": {
+              "LocationId": {
+                "$numberLong": "1"
+              },
+              "City": "New York",
+              "State": "NY",
+              "Country": "USA",
+              "ZipCode": "10001",
+              "Latitude": 40.7128,
+              "Longitude": -74.006,
+              "AddressLine1": "123 Main St",
+              "AddressLine2": "Apt 4B",
+              "Landmark": "Near Central Park",
+              "TimeZone": "America/New_York"
+            },
+            "PagesVisited": [
               {
-                "pageName": "Dashboard",
-                "visitDuration": 180
+                "PageId": {
+                  "$numberLong": "1"
+                },
+                "PageUrl": "https://example.com/home",
+                "Title": "Home"
               },
               {
-                "pageName": "Settings",
-                "visitDuration": 45
+                "PageId": {
+                  "$numberLong": "2"
+                },
+                "PageUrl": "https://example.com/settings",
+                "Title": "Settings"
+              },
+              {
+                "PageId": {
+                  "$numberLong": "3"
+                },
+                "PageUrl": "https://example.com/reports",
+                "Title": "Reports"
+              },
+              {
+                "PageId": {
+                  "$numberLong": "4"
+                },
+                "PageUrl": "https://example.com/settings",
+                "Title": "Settings"
+              },
+              {
+                "PageId": {
+                  "$numberLong": "5"
+                },
+                "PageUrl": "https://example.com/dashboard",
+                "Title": "Dashboard"
+              },
+              {
+                "PageId": {
+                  "$numberLong": "6"
+                },
+                "PageUrl": "https://example.com/logout",
+                "Title": "Logout"
+              }
+            ]
+          },
+          {
+            "UserId": {
+              "$numberLong": "4"
+            },
+            "LoginId": {
+              "$numberLong": "359470"
+            },
+            "LoginTime": {
+              "$date": "2023-06-20T04:31:07.733Z"
+            },
+            "LogoutTime": {
+              "$date": "2023-06-20T05:07:07.733Z"
+            },
+            "SessionId": "9899a140-e921-470d-a3f2-7b943fc3fe2d",
+            "IpAddress": "108.162.7.129",
+            "DeviceInfo": {
+              "DeviceId": {
+                "$numberLong": "3"
+              },
+              "DeviceName": "Device-3",
+              "DeviceType": "Mobile",
+              "OperatingSystem": "Android",
+              "Browser": "Chrome",
+              "LastActive": {
+                "$date": "2023-06-20T04:31:07.733Z"
+              }
+            },
+            "LoginLocation": {
+              "LocationId": {
+                "$numberLong": "1"
+              },
+              "City": "New York",
+              "State": "NY",
+              "Country": "USA",
+              "ZipCode": "10001",
+              "Latitude": 40.7128,
+              "Longitude": -74.006,
+              "AddressLine1": "123 Main St",
+              "AddressLine2": "Apt 4B",
+              "Landmark": "Near Central Park",
+              "TimeZone": "America/New_York"
+            },
+            "PagesVisited": [
+              {
+                "PageId": {
+                  "$numberLong": "1"
+                },
+                "PageUrl": "https://example.com/logout",
+                "Title": "Logout"
+              },
+              {
+                "PageId": {
+                  "$numberLong": "2"
+                },
+                "PageUrl": "https://example.com/home",
+                "Title": "Home"
               }
             ]
           }
         ],
-        "login_frequency": 3,
-        "active_login_times_in": 5,
-        "userId": "12345"
+        "ProfileScores": []
       }
+      
+      # Output Guidelines:
+      The output should be in JSON format and should include the following fields:
+        - score: The calculated score based on the user profile data.
+        - category: The category of the score (e.g., Very Low, Low, Medium, High, Very High).
+        - reason: The reasoning behind the score.
+        - userId: The userId of the user profile.
+        - Id: The Id of the user profile.
+      The output should be in the following format:
+        {
+          "score": <score>,
+          "category": <category>,
+          "reason": <reason>,
+          "algorithm": <algorithms>,
+          "Id": <userId>
+        }
+      The output should never contain any HTML tags or any other formatting. It should be a plain JSON object. Nothing more than that. No markdown syntaxes etc.
+        # Example Output:
+        {
+          "score": 85,
+          "category": "Very High",
+          "reason": "The user has a high login frequency and active login time, indicating strong engagement.",
+          "algorithm": "Logistic Regression",
+          "Id": 1
+        }
+       # Example Invalid output: the blow output is invalid as it has output other than json (### Explanation:1.), which is not allowed.
+         {  "score": 30,  "category": "Low",  "reason": "The user has a moderate login history with 15 recorded logins, which shows some level of interaction, but the age of the user may suggest less frequent usage of digital platforms.",  "algorithm": "Simple Weighted Scoring",  "userId": 20}
+          ### Explanation:1. **User Age**: The user was born in 1951, making them 71 years old as of 2023. This age might typically correlate with lower digital engagement.   2. **User Login History**: The user has 15 login records, which indicates some level of engagement.3. **Algorithm Used**: A simple weighted scoring algorithm was used to evaluate the user's profile. The weights were distributed as follows:   - User age: 20%   - User login history: 30%   - User login frequency and active login time were not provided, hence not factored in.The final score of 30 reflects the user's moderate login history but possible lower engagement due to age, placing them in the "Low" category.
+
   </message>
   <message role="user">       
-      - user DOB: {{user.DOB}}
-      - user login history: {{user.login_history}}
-      - user login frequency: {{user.login_frequency}}
-      - user active login time in minutes: {{user.active_login_times}}
-      - userId: {{user.userId}}
+      - user DOB: {{user.DateOfBirth}}
+      - user login history: {{user.LoginHistory}}      
+      - userId: {{user.Id}}
   </message>
 template_format: handlebars
 description: This template is to perform profile scoring of a user profile.
@@ -107,7 +358,7 @@ input_variables:
     is_required: true
     allow_dangerously_set_content: false
 output_variable:
-  description: The summarized information.
+  description: Profile score in json format.
 execution_settings:
   service1:
     model_id: gpt-4o

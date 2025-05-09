@@ -23,6 +23,8 @@ public class ProfileScoringService(
         foreach (var userProfile in userProfiles)
         {
             var score = await CalculateProfileScore(userProfile);
+            userProfile.ProfileScores = [.. userProfile.ProfileScores, score];
+            await databaseService.UpdateUserProfileAsync(userProfile);
             profileScores.Add(score);
         }
 
@@ -54,14 +56,7 @@ public class ProfileScoringService(
             new KernelArguments() { { "userProfile", userProfile }, { "kernel", kernel } }
         );
 
-        return new UserProfileScore
-        {
-            UserId = userProfile.Id,
-            ScoreId = 1,
-            Score = 85,
-            Category = "User Engagement",
-            Algorithm = "LLM",
-            Reason = "High engagement with the platform.",
-        };
+        return result.GetValue<UserProfileScore>()
+            ?? throw new Exception("Failed to get UserProfileScore from kernel");
     }
 }
