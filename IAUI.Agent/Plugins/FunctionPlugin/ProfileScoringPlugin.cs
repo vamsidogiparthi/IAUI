@@ -3,7 +3,10 @@ using Microsoft.SemanticKernel.PromptTemplates.Handlebars;
 
 namespace IAUI.Agent.Plugins.FunctionPlugin;
 
-public class ProfileScoringPlugin(ILogger<ProfileScoringPlugin> logger, Kernel kernel)
+public class ProfileScoringPlugin(
+    ILogger<ProfileScoringPlugin> logger,
+    [FromKeyedServices("IAUIKKernel")] Kernel kernel
+)
 {
     [KernelFunction("score_user_profile")]
     [Description("Score user profile based on various parameters. using LLM prompting.")]
