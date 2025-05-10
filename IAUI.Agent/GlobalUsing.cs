@@ -1,4 +1,6 @@
+global using System.ComponentModel;
 global using AutoMapper;
+global using IAUI.Agent.Database_Layer;
 global using IAUI.Agent.Models;
 global using IAUI.Agent.Options;
 global using IAUI.Agent.Services;

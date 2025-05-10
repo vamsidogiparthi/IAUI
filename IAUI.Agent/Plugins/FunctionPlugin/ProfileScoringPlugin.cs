@@ -9,7 +9,7 @@ public class ProfileScoringPlugin(ILogger<ProfileScoringPlugin> logger)
 {
     [KernelFunction("score_user_profile")]
     [Description("Score user profile based on various parameters. using LLM prompting.")]
-    public async Task<UserProfileScore> GetUserProfileScore(
+    public async Task<UserProfileScore> CalculateUserProfileScore(
         [Description("user profile information for scoring")] UserProfile userProfile,
         Kernel kernel
     )
@@ -37,6 +37,7 @@ public class ProfileScoringPlugin(ILogger<ProfileScoringPlugin> logger)
         logger.LogInformation("Response: {Response}", cleansedResponse);
 
         var userProfileScore = JsonSerializer.Deserialize<UserProfileScore>(cleansedResponse);
+        userProfileScore!.CreatedAt = DateTime.UtcNow;
 
         return userProfileScore ?? throw new Exception("Failed to deserialize UserProfileScore");
     }

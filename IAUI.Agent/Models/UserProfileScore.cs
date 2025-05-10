@@ -21,5 +21,13 @@ namespace IAUI.Agent.Models
 
         [JsonPropertyName("reason")]
         public string Reason { get; set; } = string.Empty;
+
+        [JsonPropertyName("createdAt")]
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
+        public override string ToString()
+        {
+            return $"UserId: {UserId}, ScoreId: {ScoreId}, Score: {Score}, Category: {Category}, Algorithm: {Algorithm}, Reason: {Reason}, CreatedAt: {CreatedAt}";
+        }
     }
 }

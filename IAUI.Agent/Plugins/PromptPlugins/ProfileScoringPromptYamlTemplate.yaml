@@ -322,14 +322,14 @@ template: |
         - category: The category of the score (e.g., Very Low, Low, Medium, High, Very High).
         - reason: The reasoning behind the score.
         - userId: The userId of the user profile.
-        - algorithm: The algorithm used to calculate the score.
+        - algorithm: The algorithm used to calculate the score.        
       The output should be in the following format:
         {
           "score": <score>,
           "category": <category>,
           "reason": <reason>,
           "algorithm": <algorithms>,
-          "userId": <userId>
+          "userId": <userId>          
         }
       The output should never contain any HTML tags or any other formatting. It should be a plain JSON object. Nothing more than that. No markdown syntaxes etc.
         # Example Output:
@@ -338,7 +338,7 @@ template: |
           "category": "Very High",
           "reason": "The user has a high login frequency and active login time, indicating strong engagement.",
           "algorithm": "Logistic Regression",
-          "userId": 1
+          "userId": 1          
         }
        # Example Invalid output: the blow output is invalid as it has output other than json (### Explanation:1.), which is not allowed.
          {  "score": 30,  "category": "Low",  "reason": "The user has a moderate login history with 15 recorded logins, which shows some level of interaction, but the age of the user may suggest less frequent usage of digital platforms.",  "algorithm": "Simple Weighted Scoring",  "userId": 20}

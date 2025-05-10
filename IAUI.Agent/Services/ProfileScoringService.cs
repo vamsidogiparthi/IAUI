@@ -8,6 +8,7 @@ public interface IProfileScoringService
     Task<IEnumerable<UserProfileScore>> GetAllProfileScoresAsync();
     Task<UserProfileScore> UpdateProfileScoreAsync(string profileId, UserProfileScore score);
     Task<IEnumerable<UserProfileScore>> CalculateProfileScoresForAllUserProfile();
+    Task<UserProfileScore> CalculateProfileScore(UserProfile userProfile);
 }
 
 public class ProfileScoringService(
@@ -46,7 +47,7 @@ public class ProfileScoringService(
         throw new NotImplementedException();
     }
 
-    private async Task<UserProfileScore> CalculateProfileScore(UserProfile userProfile)
+    public async Task<UserProfileScore> CalculateProfileScore(UserProfile userProfile)
     {
         // Implement your scoring logic here
 
