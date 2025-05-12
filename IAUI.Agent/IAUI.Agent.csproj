@@ -16,6 +16,7 @@
     <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.4" />
     <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="9.0.4" />
     <PackageReference Include="Microsoft.SemanticKernel" Version="1.48.0" />
+    <PackageReference Include="Microsoft.SemanticKernel.Connectors.Google" Version="1.49.0-alpha" />
     <PackageReference Include="Microsoft.SemanticKernel.PromptTemplates.Handlebars" Version="1.48.0" />
     <PackageReference Include="Microsoft.SemanticKernel.Yaml" Version="1.48.0" />
     <PackageReference Include="MongoDB.Driver" Version="3.4.0" />
@@ -24,6 +25,9 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Plugins\PromptPlugins\ProfileScoringPromptYamlTemplate.yaml" />
+    <EmbeddedResource Include="Plugins\PromptPlugins\UIAssignmentPluginTemplate.yaml" />
+    <EmbeddedResource Include="Plugins\PromptPlugins\PromptTemplateTest.yaml" />
+
     <None Update="appsettings.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

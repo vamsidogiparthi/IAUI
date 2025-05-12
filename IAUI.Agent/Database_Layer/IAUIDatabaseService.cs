@@ -10,11 +10,16 @@ public interface IIAUIDatabaseService
     Task AddUserProfileAsync(UserProfile userProfile);
     Task UpdateUserProfileAsync(UserProfile userProfile);
     Task DeleteUserProfileAsync(long userId);
+    Task<UserProfileScore> GetProfileScoreAsync(long profileId);
+    Task<IEnumerable<UIComponentLibrary>> GetUIComponentLibraryAsyncByProfileScore(int score);
+    Task<UIComponentLibrary> CreateUIComponentLibraryAsync(UIComponentLibrary uiComponentLibrary);
+    Task<IEnumerable<UIComponentLibrary>> GetAllUIComponentLibrariesAsync();
 }
 
 public class IAUIDatabaseService : IIAUIDatabaseService
 {
     private readonly IMongoCollection<UserProfile> _userProfilesCollection;
+    private readonly IMongoCollection<UIComponentLibrary> _uiComponentLibraryCollection;
 
     public IAUIDatabaseService(IOptions<IAUIStoreDatabaseConfiguration> configuration)
     {
@@ -24,6 +29,10 @@ public class IAUIDatabaseService : IIAUIDatabaseService
         var database = mongoClient.GetDatabase(configuration.Value.DatabaseName);
         _userProfilesCollection = database.GetCollection<UserProfile>(
             configuration.Value.CollectionName
+        );
+
+        _uiComponentLibraryCollection = database.GetCollection<UIComponentLibrary>(
+            configuration.Value.UIComponentLibraryCollectionName
         );
     }
 
@@ -57,5 +66,37 @@ public class IAUIDatabaseService : IIAUIDatabaseService
     {
         var filter = Builders<UserProfile>.Filter.Eq(up => up.Id, userId);
         await _userProfilesCollection.DeleteOneAsync(filter);
+    }
+
+    public async Task<UserProfileScore> GetProfileScoreAsync(long profileId)
+    {
+        var filter = Builders<UserProfile>.Filter.Eq(up => up.Id, profileId);
+        var userProfile = await _userProfilesCollection.Find(filter).FirstOrDefaultAsync();
+        return userProfile.ProfileScores.FirstOrDefault(defaultValue: new());
+    }
+
+    public async Task<IEnumerable<UIComponentLibrary>> GetUIComponentLibraryAsyncByProfileScore(
+        int score
+    )
+    {
+        var filter =
+            Builders<UIComponentLibrary>.Filter.Gte(up => up.MatchingUserProfileScoreMin, score)
+            & Builders<UIComponentLibrary>.Filter.Lt(up => up.MatchingUserProfileScoreMax, score);
+        return await _uiComponentLibraryCollection.Find(filter).ToListAsync();
+    }
+
+    public async Task<UIComponentLibrary> CreateUIComponentLibraryAsync(
+        UIComponentLibrary uiComponentLibrary
+    )
+    {
+        ArgumentNullException.ThrowIfNull(uiComponentLibrary);
+
+        await _uiComponentLibraryCollection.InsertOneAsync(uiComponentLibrary);
+        return uiComponentLibrary;
+    }
+
+    public async Task<IEnumerable<UIComponentLibrary>> GetAllUIComponentLibrariesAsync()
+    {
+        return await _uiComponentLibraryCollection.Find(_ => true).ToListAsync();
     }
 }

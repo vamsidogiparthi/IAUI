@@ -7,7 +7,7 @@ public class ProfileDataFetchPlugin(
 )
 {
     [KernelFunction("fetch_user_profile")]
-    [Description("Fetch user profile from the database.")]
+    [Description("Fetch user profile from the database. using userId.")]
     public async Task<UserProfile> GetUserProfile(
         [Description("user profile information for scoring")] long userId
     )
@@ -20,7 +20,7 @@ public class ProfileDataFetchPlugin(
     }
 
     [KernelFunction("fetch_latest_user_profile_score")]
-    [Description("Fetch latest user profile score from the database.")]
+    [Description("Fetch latest user profile score from the database. for the given userId.")]
     public async Task<UserProfileScore> GetRecentUserProfileScore(
         [Description("user profile information for scoring")] long userId
     )

@@ -1,4 +1,3 @@
-using IAUI.Agent.Database_Layer;
 using IAUI.Agent.Plugins.FunctionPlugin;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -25,10 +24,17 @@ builder.Services.Configure<IAUIStoreDatabaseConfiguration>(
     configuration.GetSection(IAUIStoreDatabaseConfiguration.SectionName)
 );
 
+builder.Services.Configure<GoogleAIConfiguration>(
+    configuration.GetSection(GoogleAIConfiguration.SectionName)
+);
+
+builder.Services.Configure<ProfileScoringAlgorithmConfiguration>(
+    configuration.GetSection(ProfileScoringAlgorithmConfiguration.SectionName)
+);
+
 builder.Services.AddSingleton<IIAUIDatabaseService, IAUIDatabaseService>();
 builder.Services.AddSingleton<IDataSeeder, DataSeeder>();
 builder.Services.AddSingleton<IProfileScoringService, ProfileScoringService>();
-
 
 builder.Services.AddSingleton<IChatCompletionService>(sp =>
 {
@@ -36,20 +42,33 @@ builder.Services.AddSingleton<IChatCompletionService>(sp =>
         configuration.GetSection(OpenAIConfiguration.SectionName).Get<OpenAIConfiguration>()
         ?? throw new Exception("OpenAI configuration is missing");
 
+    var googleAIConfiguration =
+        configuration.GetSection(GoogleAIConfiguration.SectionName).Get<GoogleAIConfiguration>()
+        ?? throw new Exception("Google AI configuration is missing");
+
+#pragma warning disable SKEXP0070 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
+    // return new GoogleAIGeminiChatCompletionService(
+    //     googleAIConfiguration.Model,
+    //     googleAIConfiguration.ApiKey
+    // );
+#pragma warning restore SKEXP0070 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
+
     return new OpenAIChatCompletionService(openAIConfiguration.Model, openAIConfiguration.ApiKey);
 });
 
-builder.Services.AddSingleton<TimePlugin>();
-builder.Services.AddSingleton<ProfileDataFetchPlugin>();
-builder.Services.AddKeyedSingleton<ProfileScoringPlugin>(nameof(ProfileScoringPlugin));
-builder.Services.AddSingleton<UIComponentLibraryPlugin>();
+builder.Services.AddTransient<TimePlugin>();
+
+//builder.Services.AddSingleton<ProfileDataFetchPlugin>();
+builder.Services.AddKeyedTransient<ProfileScoringPlugin>(nameof(ProfileScoringPlugin));
+
+builder.Services.AddTransient<UIComponentLibraryPlugin>();
 builder.Services.AddKeyedTransient(
     "IAUIKKernel",
     (sp, key) =>
     {
         KernelPluginCollection kernelFunctions = [];
         kernelFunctions.AddFromObject(sp.GetRequiredService<TimePlugin>());
-        kernelFunctions.AddFromObject(sp.GetRequiredService<ProfileDataFetchPlugin>());
+        //kernelFunctions.AddFromObject(sp.GetRequiredService<ProfileDataFetchPlugin>());
         kernelFunctions.AddFromObject(
             sp.GetRequiredKeyedService<ProfileScoringPlugin>(nameof(ProfileScoringPlugin))
         );
@@ -70,6 +89,4 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 //await app.Services.GetRequiredService<IDataSeeder>().SeedData();
-// await app
-//     .Services.GetRequiredService<IProfileScoringService>()
-//     .CalculateProfileScoresForAllUserProfile();
+await app.Services.GetRequiredService<IProfileScoringService>().GetUIComponentLibrariesAsync();

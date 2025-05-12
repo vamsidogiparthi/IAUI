@@ -1,0 +1,1856 @@
+[
+  {
+    "userId": 1,
+    "profileScore": 72,
+    "uiComponents": [
+      {
+        "id": 5,
+        "name": "ButtonComponent",
+        "version": "1.0.0",
+        "description": "A basic button component.",
+        "matchingUserProfileScoreMin": 60,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cbutton-component\u003E\u003C/button-component\u003E"
+      },
+      {
+        "id": 6,
+        "name": "NotificationBanner",
+        "version": "1.3.0",
+        "description": "A banner for notifications.",
+        "matchingUserProfileScoreMin": 71,
+        "matchingUserProfileScoreMax": 90,
+        "componentTag": "\u003Cnotification-banner\u003E\u003C/notification-banner\u003E"
+      }
+    ],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-US"
+  },
+  {
+    "userId": 2,
+    "profileScore": 62,
+    "uiComponents": [
+      {
+        "id": 1,
+        "name": "NavigationBar",
+        "version": "1.0.5",
+        "description": "A top navigation bar for easy access to main sections.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cnavigation-bar\u003E\u003C/navigation-bar\u003E"
+      },
+      {
+        "id": 2,
+        "name": "FooterComponent",
+        "version": "1.1.0",
+        "description": "A footer component for displaying site information.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cfooter-component\u003E\u003C/footer-component\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-AU"
+  },
+  {
+    "userId": 3,
+    "profileScore": 67,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "ja",
+    "localizationLanguageCode": "ja-JP"
+  },
+  {
+    "userId": 4,
+    "profileScore": 66,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "hi",
+    "localizationLanguageCode": "hi-IN"
+  },
+  {
+    "userId": 5,
+    "profileScore": 65,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "ja",
+    "localizationLanguageCode": "ja-JP"
+  },
+  {
+    "userId": 6,
+    "profileScore": 63,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "hi",
+    "localizationLanguageCode": "hi-IN"
+  },
+  {
+    "userId": 7,
+    "profileScore": 67,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-US"
+  },
+  {
+    "userId": 8,
+    "profileScore": 67,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "ja",
+    "localizationLanguageCode": "ja-JP"
+  },
+  {
+    "userId": 9,
+    "profileScore": 50,
+    "uiComponents": [
+      {
+        "id": 1,
+        "name": "HeaderComponent",
+        "version": "1.0.0",
+        "description": "A header component for navigation.",
+        "matchingUserProfileScoreMin": 40,
+        "matchingUserProfileScoreMax": 60,
+        "componentTag": "\u003Cheader-component\u003E\u003C/header-component\u003E"
+      },
+      {
+        "id": 2,
+        "name": "FooterComponent",
+        "version": "2.1.0",
+        "description": "A footer component with contact information.",
+        "matchingUserProfileScoreMin": 40,
+        "matchingUserProfileScoreMax": 60,
+        "componentTag": "\u003Cfooter-component\u003E\u003C/footer-component\u003E"
+      }
+    ],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-GB"
+  },
+  {
+    "userId": 10,
+    "profileScore": 75,
+    "uiComponents": [
+      {
+        "id": 1,
+        "name": "HeaderComponent",
+        "version": "1.0.0",
+        "description": "A header component designed for navigation and branding.",
+        "matchingUserProfileScoreMin": 70,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cheader-component\u003E\u003C/header-component\u003E"
+      },
+      {
+        "id": 2,
+        "name": "FooterComponent",
+        "version": "1.0.0",
+        "description": "A footer component with links and contact information.",
+        "matchingUserProfileScoreMin": 71,
+        "matchingUserProfileScoreMax": 79,
+        "componentTag": "\u003Cfooter-component\u003E\u003C/footer-component\u003E"
+      },
+      {
+        "id": 3,
+        "name": "SidebarComponent",
+        "version": "1.3.5",
+        "description": "A sidebar component for additional navigation options.",
+        "matchingUserProfileScoreMin": 75,
+        "matchingUserProfileScoreMax": 85,
+        "componentTag": "\u003Csidebar-component\u003E\u003C/sidebar-component\u003E"
+      }
+    ],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-GB"
+  },
+  {
+    "userId": 11,
+    "profileScore": 10,
+    "uiComponents": [
+      {
+        "id": 1,
+        "name": "Toolbar",
+        "version": "1.0.0",
+        "description": "A toolbar component for navigation and actions.",
+        "matchingUserProfileScoreMin": 0,
+        "matchingUserProfileScoreMax": 20,
+        "componentTag": "\u003Ctoolbar\u003E\u003C/toolbar\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "mr",
+    "localizationLanguageCode": "mr-IN"
+  },
+  {
+    "userId": 12,
+    "profileScore": 67,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-GB"
+  },
+  {
+    "userId": 13,
+    "profileScore": 10,
+    "uiComponents": [
+      {
+        "id": 1,
+        "name": "BasicComponent",
+        "version": "1.0.0",
+        "description": "A basic component for initial user interactions.",
+        "matchingUserProfileScoreMin": 0,
+        "matchingUserProfileScoreMax": 20,
+        "componentTag": "\u003Cbasic-component\u003E\u003C/basic-component\u003E"
+      },
+      {
+        "id": 2,
+        "name": "SimpleButton",
+        "version": "1.1.0",
+        "description": "A simple button component for starting tasks.",
+        "matchingUserProfileScoreMin": 0,
+        "matchingUserProfileScoreMax": 20,
+        "componentTag": "\u003Csimple-button\u003E\u003C/simple-button\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "ja",
+    "localizationLanguageCode": "ja-JP"
+  },
+  {
+    "userId": 14,
+    "profileScore": 55,
+    "uiComponents": [
+      {
+        "id": 1,
+        "name": "SliderComponent",
+        "version": "3.0.0",
+        "description": "A slider component for adjusting values.",
+        "matchingUserProfileScoreMin": 50,
+        "matchingUserProfileScoreMax": 60,
+        "componentTag": "\u003Cslider-component\u003E\u003C/slider-component\u003E"
+      },
+      {
+        "id": 2,
+        "name": "ButtonComponent",
+        "version": "1.5.0",
+        "description": "A button component for initiating actions.",
+        "matchingUserProfileScoreMin": 50,
+        "matchingUserProfileScoreMax": 60,
+        "componentTag": "\u003Cbutton-component\u003E\u003C/button-component\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "hi",
+    "localizationLanguageCode": "hi-IN"
+  },
+  {
+    "userId": 15,
+    "profileScore": 70,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "hi",
+    "localizationLanguageCode": "hi-IN"
+  },
+  {
+    "userId": 16,
+    "profileScore": 62,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-AU"
+  },
+  {
+    "userId": 17,
+    "profileScore": 0,
+    "uiComponents": [],
+    "theme": "dark",
+    "languageCode": "ja",
+    "localizationLanguageCode": "ja-JP"
+  },
+  {
+    "userId": 18,
+    "profileScore": 55,
+    "uiComponents": [
+      {
+        "id": 1,
+        "name": "CardComponent",
+        "version": "2.0.0",
+        "description": "A card component for displaying grouped content.",
+        "matchingUserProfileScoreMin": 41,
+        "matchingUserProfileScoreMax": 60,
+        "componentTag": "\u003Ccard-component\u003E\u003C/card-component\u003E"
+      },
+      {
+        "id": 2,
+        "name": "ButtonComponent",
+        "version": "1.0.0",
+        "description": "A button component for user actions.",
+        "matchingUserProfileScoreMin": 50,
+        "matchingUserProfileScoreMax": 70,
+        "componentTag": "\u003Cbutton-component\u003E\u003C/button-component\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "ja",
+    "localizationLanguageCode": "ja-JP"
+  },
+  {
+    "userId": 19,
+    "profileScore": 74,
+    "uiComponents": [
+      {
+        "id": 30,
+        "name": "NotificationBadge",
+        "version": "1.0.0",
+        "description": "A badge to indicate new notifications.",
+        "matchingUserProfileScoreMin": 70,
+        "matchingUserProfileScoreMax": 75,
+        "componentTag": "\u003Cnotification-badge\u003E\u003C/notification-badge\u003E"
+      },
+      {
+        "id": 35,
+        "name": "SideNav",
+        "version": "3.2.1",
+        "description": "A side navigation menu for easy access.",
+        "matchingUserProfileScoreMin": 65,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cside-nav\u003E\u003C/side-nav\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "ja",
+    "localizationLanguageCode": "ja-JP"
+  },
+  {
+    "userId": 20,
+    "profileScore": 75,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "hi",
+    "localizationLanguageCode": "hi-IN"
+  },
+  {
+    "userId": 21,
+    "profileScore": 72,
+    "uiComponents": [
+      {
+        "id": 7,
+        "name": "DarkModeToggle",
+        "version": "1.0.5",
+        "description": "Toggle for dark mode.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cdark-mode-toggle\u003E\u003C/dark-mode-toggle\u003E"
+      },
+      {
+        "id": 9,
+        "name": "ProfileCard",
+        "version": "2.3.1",
+        "description": "Shows user profile information.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cprofile-card\u003E\u003C/profile-card\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "hi",
+    "localizationLanguageCode": "hi-IN"
+  },
+  {
+    "userId": 22,
+    "profileScore": 50,
+    "uiComponents": [],
+    "theme": "dark",
+    "languageCode": "ja",
+    "localizationLanguageCode": "ja-JP"
+  },
+  {
+    "userId": 23,
+    "profileScore": 65,
+    "uiComponents": [
+      {
+        "id": 1,
+        "name": "ButtonComponent",
+        "version": "1.0.0",
+        "description": "A basic button component.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cbutton-component\u003E\u003C/button-component\u003E"
+      },
+      {
+        "id": 2,
+        "name": "InputComponent",
+        "version": "1.1.0",
+        "description": "A basic input field component.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cinput-component\u003E\u003C/input-component\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "ja",
+    "localizationLanguageCode": "ja-JP"
+  },
+  {
+    "userId": 24,
+    "profileScore": 73,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "hi",
+    "localizationLanguageCode": "hi-IN"
+  },
+  {
+    "userId": 25,
+    "profileScore": 75,
+    "uiComponents": [
+      {
+        "id": 1,
+        "name": "HeaderComponent",
+        "version": "1.0.0",
+        "description": "A header component for displaying top navigation bar.",
+        "matchingUserProfileScoreMin": 70,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cheader-component\u003E\u003C/header-component\u003E"
+      },
+      {
+        "id": 2,
+        "name": "SidebarComponent",
+        "version": "1.1.0",
+        "description": "A sidebar component for additional navigation options.",
+        "matchingUserProfileScoreMin": 74,
+        "matchingUserProfileScoreMax": 78,
+        "componentTag": "\u003Csidebar-component\u003E\u003C/sidebar-component\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "ja",
+    "localizationLanguageCode": "ja-JP"
+  },
+  {
+    "userId": 26,
+    "profileScore": 0,
+    "uiComponents": [],
+    "theme": "dark",
+    "languageCode": "hi",
+    "localizationLanguageCode": "hi-IN"
+  },
+  {
+    "userId": 27,
+    "profileScore": 72,
+    "uiComponents": [],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-US"
+  },
+  {
+    "userId": 28,
+    "profileScore": 0,
+    "uiComponents": [],
+    "theme": "dark",
+    "languageCode": "hi",
+    "localizationLanguageCode": "hi-IN"
+  },
+  {
+    "userId": 29,
+    "profileScore": 70,
+    "uiComponents": [
+      {
+        "id": 1,
+        "name": "Navbar",
+        "version": "1.0.0",
+        "description": "Navigation bar component for site navigation.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cnavbar\u003E\u003C/navbar\u003E"
+      },
+      {
+        "id": 2,
+        "name": "Sidebar",
+        "version": "1.2.1",
+        "description": "Sidebar component for additional links and content.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Csidebar\u003E\u003C/sidebar\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-AU"
+  },
+  {
+    "userId": 30,
+    "profileScore": 0,
+    "uiComponents": [],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-US"
+  },
+  {
+    "userId": 31,
+    "profileScore": 70,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "ja",
+    "localizationLanguageCode": "ja-JP"
+  },
+  {
+    "userId": 32,
+    "profileScore": 71,
+    "uiComponents": [
+      {
+        "id": 5,
+        "name": "NotificationToast",
+        "version": "1.0.0",
+        "description": "A toast component to display notifications.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cnotification-toast\u003E\u003C/notification-toast\u003E"
+      },
+      {
+        "id": 7,
+        "name": "SidebarMenu",
+        "version": "1.1.0",
+        "description": "A sidebar menu for easy navigation.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Csidebar-menu\u003E\u003C/sidebar-menu\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "ja",
+    "localizationLanguageCode": "ja-JP"
+  },
+  {
+    "userId": 33,
+    "profileScore": 67,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-GB"
+  },
+  {
+    "userId": 34,
+    "profileScore": 67,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-GB"
+  },
+  {
+    "userId": 35,
+    "profileScore": 64,
+    "uiComponents": [
+      {
+        "id": 1,
+        "name": "UserProfileCard",
+        "version": "1.0.0",
+        "description": "A component to display user profile information.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 70,
+        "componentTag": "\u003Cuser-profile-card\u003E\u003C/user-profile-card\u003E"
+      },
+      {
+        "id": 2,
+        "name": "NotificationBanner",
+        "version": "1.1.0",
+        "description": "A component for displaying notifications and alerts.",
+        "matchingUserProfileScoreMin": 60,
+        "matchingUserProfileScoreMax": 65,
+        "componentTag": "\u003Cnotification-banner\u003E\u003C/notification-banner\u003E"
+      }
+    ],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-US"
+  },
+  {
+    "userId": 36,
+    "profileScore": 76,
+    "uiComponents": [
+      {
+        "id": 101,
+        "name": "BannerComponent",
+        "version": "3.0.1",
+        "description": "A banner component for notifications.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cbanner-component\u003E\u003C/banner-component\u003E"
+      },
+      {
+        "id": 104,
+        "name": "TooltipComponent",
+        "version": "2.1.0",
+        "description": "A tooltip component for additional information.",
+        "matchingUserProfileScoreMin": 71,
+        "matchingUserProfileScoreMax": 90,
+        "componentTag": "\u003Ctooltip-component\u003E\u003C/tooltip-component\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-AU"
+  },
+  {
+    "userId": 37,
+    "profileScore": 75,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "hi",
+    "localizationLanguageCode": "hi-IN"
+  },
+  {
+    "userId": 38,
+    "profileScore": 67,
+    "uiComponents": [],
+    "theme": "dark",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-AU"
+  },
+  {
+    "userId": 39,
+    "profileScore": 72,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "ja",
+    "localizationLanguageCode": "ja-JP"
+  },
+  {
+    "userId": 40,
+    "profileScore": 75,
+    "uiComponents": [
+      {
+        "id": 10,
+        "name": "InformationBanner",
+        "version": "1.0.0",
+        "description": "A component to show important information to the user.",
+        "matchingUserProfileScoreMin": 70,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cinformation-banner\u003E\u003C/information-banner\u003E"
+      },
+      {
+        "id": 12,
+        "name": "NotificationPopup",
+        "version": "1.1.0",
+        "description": "A popup component for real-time notifications.",
+        "matchingUserProfileScoreMin": 71,
+        "matchingUserProfileScoreMax": 85,
+        "componentTag": "\u003Cnotification-popup\u003E\u003C/notification-popup\u003E"
+      }
+    ],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-GB"
+  },
+  {
+    "userId": 41,
+    "profileScore": 0,
+    "uiComponents": [],
+    "theme": "dark",
+    "languageCode": "hi",
+    "localizationLanguageCode": "hi-IN"
+  },
+  {
+    "userId": 42,
+    "profileScore": 65,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "hi",
+    "localizationLanguageCode": "hi-IN"
+  },
+  {
+    "userId": 43,
+    "profileScore": 50,
+    "uiComponents": [],
+    "theme": "dark",
+    "languageCode": "hi",
+    "localizationLanguageCode": "hi-IN"
+  },
+  {
+    "userId": 44,
+    "profileScore": 64,
+    "uiComponents": [
+      {
+        "id": 14,
+        "name": "NavigationBar",
+        "version": "3.0.0",
+        "description": "A top-level navigation bar for page routing.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cnavigation-bar\u003E\u003C/navigation-bar\u003E"
+      },
+      {
+        "id": 15,
+        "name": "Sidebar",
+        "version": "2.5.1",
+        "description": "A sidebar for secondary navigation.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Csidebar-component\u003E\u003C/sidebar-component\u003E"
+      }
+    ],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-US"
+  },
+  {
+    "userId": 45,
+    "profileScore": 65,
+    "uiComponents": [
+      {
+        "id": 8,
+        "name": "Sidebar",
+        "version": "1.3.0",
+        "description": "A sidebar component for navigation.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Csidebar-component\u003E\u003C/sidebar-component\u003E"
+      },
+      {
+        "id": 12,
+        "name": "NotificationBell",
+        "version": "2.1.0",
+        "description": "A notification bell component for alerts.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cnotification-bell\u003E\u003C/notification-bell\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-AU"
+  },
+  {
+    "userId": 46,
+    "profileScore": 78,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-AU"
+  },
+  {
+    "userId": 47,
+    "profileScore": 0,
+    "uiComponents": [],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-US"
+  },
+  {
+    "userId": 48,
+    "profileScore": 75,
+    "uiComponents": [
+      {
+        "id": 1,
+        "name": "ButtonComponent",
+        "version": "1.0.0",
+        "description": "A button component for user interactions.",
+        "matchingUserProfileScoreMin": 70,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cbutton-component\u003E\u003C/button-component\u003E"
+      },
+      {
+        "id": 2,
+        "name": "SliderComponent",
+        "version": "1.1.0",
+        "description": "A slider component for range selection.",
+        "matchingUserProfileScoreMin": 70,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cslider-component\u003E\u003C/slider-component\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "ja",
+    "localizationLanguageCode": "ja-JP"
+  },
+  {
+    "userId": 49,
+    "profileScore": 76,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "ja",
+    "localizationLanguageCode": "ja-JP"
+  },
+  {
+    "userId": 50,
+    "profileScore": 55,
+    "uiComponents": [
+      {
+        "id": 1,
+        "name": "ButtonComponent",
+        "version": "1.0.0",
+        "description": "A simple button component.",
+        "matchingUserProfileScoreMin": 50,
+        "matchingUserProfileScoreMax": 60,
+        "componentTag": "\u003Cbutton-component\u003E\u003C/button-component\u003E"
+      },
+      {
+        "id": 2,
+        "name": "InputField",
+        "version": "2.1.2",
+        "description": "An input field for users.",
+        "matchingUserProfileScoreMin": 30,
+        "matchingUserProfileScoreMax": 60,
+        "componentTag": "\u003Cinput-field\u003E\u003C/input-field\u003E"
+      }
+    ],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-GB"
+  },
+  {
+    "userId": 51,
+    "profileScore": 76,
+    "uiComponents": [
+      {
+        "id": 8,
+        "name": "DarkModeSwitch",
+        "version": "1.3.5",
+        "description": "A switch component to toggle dark mode.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cdark-mode-switch\u003E\u003C/dark-mode-switch\u003E"
+      },
+      {
+        "id": 11,
+        "name": "NotificationBanner",
+        "version": "2.1.0",
+        "description": "A banner component for displaying notifications.",
+        "matchingUserProfileScoreMin": 71,
+        "matchingUserProfileScoreMax": 90,
+        "componentTag": "\u003Cnotification-banner\u003E\u003C/notification-banner\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-AU"
+  },
+  {
+    "userId": 52,
+    "profileScore": 70,
+    "uiComponents": [
+      {
+        "id": 1,
+        "name": "ButtonComponent",
+        "version": "1.0.0",
+        "description": "A button component for various user actions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cbutton-component\u003E\u003C/button-component\u003E"
+      },
+      {
+        "id": 2,
+        "name": "TooltipComponent",
+        "version": "1.0.0",
+        "description": "A tooltip component to provide additional information.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Ctooltip-component\u003E\u003C/tooltip-component\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "hi",
+    "localizationLanguageCode": "hi-IN"
+  },
+  {
+    "userId": 53,
+    "profileScore": 76,
+    "uiComponents": [],
+    "theme": "dark",
+    "languageCode": "ja",
+    "localizationLanguageCode": "ja-JP"
+  },
+  {
+    "userId": 54,
+    "profileScore": 77,
+    "uiComponents": [],
+    "theme": "dark",
+    "languageCode": "ja",
+    "localizationLanguageCode": "ja-JP"
+  },
+  {
+    "userId": 55,
+    "profileScore": 60,
+    "uiComponents": [
+      {
+        "id": 1,
+        "name": "ButtonComponent",
+        "version": "1.0.0",
+        "description": "A standard button component.",
+        "matchingUserProfileScoreMin": 50,
+        "matchingUserProfileScoreMax": 70,
+        "componentTag": "\u003Cbutton-component\u003E\u003C/button-component\u003E"
+      },
+      {
+        "id": 2,
+        "name": "InputField",
+        "version": "2.0.1",
+        "description": "An input field for user text entry.",
+        "matchingUserProfileScoreMin": 40,
+        "matchingUserProfileScoreMax": 60,
+        "componentTag": "\u003Cinput-field\u003E\u003C/input-field\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-AU"
+  },
+  {
+    "userId": 56,
+    "profileScore": 0,
+    "uiComponents": [
+      {
+        "id": 1,
+        "name": "BasicButton",
+        "version": "1.0.0",
+        "description": "A basic button component.",
+        "matchingUserProfileScoreMin": 0,
+        "matchingUserProfileScoreMax": 20,
+        "componentTag": "\u003Cbasic-button\u003E\u003C/basic-button\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "ja",
+    "localizationLanguageCode": "ja-JP"
+  },
+  {
+    "userId": 57,
+    "profileScore": 0,
+    "uiComponents": [],
+    "theme": "dark",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-AU"
+  },
+  {
+    "userId": 58,
+    "profileScore": 75,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-UK"
+  },
+  {
+    "userId": 59,
+    "profileScore": 0,
+    "uiComponents": [],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-US"
+  },
+  {
+    "userId": 60,
+    "profileScore": 55,
+    "uiComponents": [
+      {
+        "id": 3,
+        "name": "CardComponent",
+        "version": "2.0.0",
+        "description": "A card component for displaying grouped content.",
+        "matchingUserProfileScoreMin": 41,
+        "matchingUserProfileScoreMax": 60,
+        "componentTag": "\u003Ccard-component\u003E\u003C/card-component\u003E"
+      }
+    ],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-GB"
+  },
+  {
+    "userId": 61,
+    "profileScore": 0,
+    "uiComponents": [],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-US"
+  },
+  {
+    "userId": 62,
+    "profileScore": 76,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-GB"
+  },
+  {
+    "userId": 63,
+    "profileScore": 65,
+    "uiComponents": [],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-US"
+  },
+  {
+    "userId": 64,
+    "profileScore": 0,
+    "uiComponents": [],
+    "theme": "dark",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-AU"
+  },
+  {
+    "userId": 65,
+    "profileScore": 75,
+    "uiComponents": [
+      {
+        "id": 10,
+        "name": "NotificationBanner",
+        "version": "3.0.1",
+        "description": "A banner for displaying notifications",
+        "matchingUserProfileScoreMin": 70,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cnotification-banner\u003E\u003C/notification-banner\u003E"
+      },
+      {
+        "id": 11,
+        "name": "Sidebar",
+        "version": "1.4.2",
+        "description": "A component for the sidebar navigation menu",
+        "matchingUserProfileScoreMin": 70,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Csidebar-menu\u003E\u003C/sidebar-menu\u003E"
+      }
+    ],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-GB"
+  },
+  {
+    "userId": 66,
+    "profileScore": 0,
+    "uiComponents": [],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-GB"
+  },
+  {
+    "userId": 67,
+    "profileScore": 76,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-US"
+  },
+  {
+    "userId": 68,
+    "profileScore": 5,
+    "uiComponents": [],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-US"
+  },
+  {
+    "userId": 69,
+    "profileScore": 56,
+    "uiComponents": [
+      {
+        "id": 1,
+        "name": "CardComponent",
+        "version": "2.0.0",
+        "description": "A card component for displaying grouped content.",
+        "matchingUserProfileScoreMin": 41,
+        "matchingUserProfileScoreMax": 60,
+        "componentTag": "\u003Ccard-component\u003E\u003C/card-component\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "hi",
+    "localizationLanguageCode": "hi-IN"
+  },
+  {
+    "userId": 70,
+    "profileScore": 50,
+    "uiComponents": [
+      {
+        "id": 1,
+        "name": "NavigationBar",
+        "version": "3.1.0",
+        "description": "A navigation bar for application usage.",
+        "matchingUserProfileScoreMin": 41,
+        "matchingUserProfileScoreMax": 60,
+        "componentTag": "\u003Cnavigation-bar\u003E\u003C/navigation-bar\u003E"
+      },
+      {
+        "id": 2,
+        "name": "Sidebar",
+        "version": "2.4.1",
+        "description": "A sidebar component for additional options.",
+        "matchingUserProfileScoreMin": 41,
+        "matchingUserProfileScoreMax": 60,
+        "componentTag": "\u003Cside-bar\u003E\u003C/side-bar\u003E"
+      },
+      {
+        "id": 3,
+        "name": "ContentPanel",
+        "version": "5.0.0",
+        "description": "A content panel for displaying main content.",
+        "matchingUserProfileScoreMin": 41,
+        "matchingUserProfileScoreMax": 60,
+        "componentTag": "\u003Ccontent-panel\u003E\u003C/content-panel\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "hi",
+    "localizationLanguageCode": "hi-IN"
+  },
+  {
+    "userId": 71,
+    "profileScore": 76,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "hi",
+    "localizationLanguageCode": "hi-IN"
+  },
+  {
+    "userId": 72,
+    "profileScore": 66,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "ja",
+    "localizationLanguageCode": "ja-JP"
+  },
+  {
+    "userId": 73,
+    "profileScore": 75,
+    "uiComponents": [
+      {
+        "id": 1,
+        "name": "HeaderComponent",
+        "version": "1.0.0",
+        "description": "A header component for displaying navigation.",
+        "matchingUserProfileScoreMin": 70,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cheader-component\u003E\u003C/header-component\u003E"
+      },
+      {
+        "id": 2,
+        "name": "FooterComponent",
+        "version": "1.1.0",
+        "description": "A footer component for displaying page footers.",
+        "matchingUserProfileScoreMin": 70,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cfooter-component\u003E\u003C/footer-component\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "ja",
+    "localizationLanguageCode": "ja-JP"
+  },
+  {
+    "userId": 74,
+    "profileScore": 68,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "hi",
+    "localizationLanguageCode": "hi-IN"
+  },
+  {
+    "userId": 75,
+    "profileScore": 0,
+    "uiComponents": [],
+    "theme": "dark",
+    "languageCode": "hi",
+    "localizationLanguageCode": "hi-IN"
+  },
+  {
+    "userId": 76,
+    "profileScore": 25,
+    "uiComponents": [],
+    "theme": "dark",
+    "languageCode": "ja",
+    "localizationLanguageCode": "ja-JP"
+  },
+  {
+    "userId": 77,
+    "profileScore": 56,
+    "uiComponents": [
+      {
+        "id": 1,
+        "name": "CardComponent",
+        "version": "3.0.1",
+        "description": "A card component for displaying grouped content.",
+        "matchingUserProfileScoreMin": 50,
+        "matchingUserProfileScoreMax": 60,
+        "componentTag": "\u003Ccard-component\u003E\u003C/card-component\u003E"
+      },
+      {
+        "id": 2,
+        "name": "ButtonComponent",
+        "version": "4.1.0",
+        "description": "A button component for user interactions.",
+        "matchingUserProfileScoreMin": 45,
+        "matchingUserProfileScoreMax": 65,
+        "componentTag": "\u003Cbutton-component\u003E\u003C/button-component\u003E"
+      }
+    ],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-GB"
+  },
+  {
+    "userId": 78,
+    "profileScore": 61,
+    "uiComponents": [
+      {
+        "id": 1,
+        "name": "HeaderComponent",
+        "version": "1.0.0",
+        "description": "A header component for page titles and navigation.",
+        "matchingUserProfileScoreMin": 60,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cheader-component\u003E\u003C/header-component\u003E"
+      },
+      {
+        "id": 2,
+        "name": "FooterComponent",
+        "version": "1.0.0",
+        "description": "A footer component for displaying legal and copyright information.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cfooter-component\u003E\u003C/footer-component\u003E"
+      }
+    ],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-US"
+  },
+  {
+    "userId": 79,
+    "profileScore": 58,
+    "uiComponents": [
+      {
+        "id": 1,
+        "name": "ButtonComponent",
+        "version": "1.0.0",
+        "description": "A simple button component.",
+        "matchingUserProfileScoreMin": 50,
+        "matchingUserProfileScoreMax": 60,
+        "componentTag": "\u003Cbutton-component\u003E\u003C/button-component\u003E"
+      },
+      {
+        "id": 2,
+        "name": "HeaderComponent",
+        "version": "1.1.0",
+        "description": "A header component for displaying page titles.",
+        "matchingUserProfileScoreMin": 55,
+        "matchingUserProfileScoreMax": 65,
+        "componentTag": "\u003Cheader-component\u003E\u003C/header-component\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "hi",
+    "localizationLanguageCode": "hi-IN"
+  },
+  {
+    "userId": 80,
+    "profileScore": 65,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "hi",
+    "localizationLanguageCode": "hi-IN"
+  },
+  {
+    "userId": 81,
+    "profileScore": 75,
+    "uiComponents": [
+      {
+        "id": 1,
+        "name": "HeaderComponent",
+        "version": "1.0.0",
+        "description": "Header component for navigation",
+        "matchingUserProfileScoreMin": 70,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cheader-component\u003E\u003C/header-component\u003E"
+      },
+      {
+        "id": 2,
+        "name": "FooterComponent",
+        "version": "1.1.0",
+        "description": "Footer component for footer details",
+        "matchingUserProfileScoreMin": 70,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cfooter-component\u003E\u003C/footer-component\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-AU"
+  },
+  {
+    "userId": 82,
+    "profileScore": 67,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "hi",
+    "localizationLanguageCode": "hi-IN"
+  },
+  {
+    "userId": 83,
+    "profileScore": 65,
+    "uiComponents": [
+      {
+        "id": 6,
+        "name": "SliderComponent",
+        "version": "3.0.0",
+        "description": "A slider component for user inputs.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cslider-component\u003E\u003C/slider-component\u003E"
+      },
+      {
+        "id": 7,
+        "name": "NotificationPopover",
+        "version": "1.0.0",
+        "description": "A popover component for notifications.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cnotification-popover\u003E\u003C/notification-popover\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-AU"
+  },
+  {
+    "userId": 84,
+    "profileScore": 0,
+    "uiComponents": [],
+    "theme": "dark",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-AU"
+  },
+  {
+    "userId": 85,
+    "profileScore": 0,
+    "uiComponents": [],
+    "theme": "dark",
+    "languageCode": "hi",
+    "localizationLanguageCode": "hi-IN"
+  },
+  {
+    "userId": 86,
+    "profileScore": 65,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-US"
+  },
+  {
+    "userId": 87,
+    "profileScore": 66,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-AU"
+  },
+  {
+    "userId": 88,
+    "profileScore": 68,
+    "uiComponents": [],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-US"
+  },
+  {
+    "userId": 89,
+    "profileScore": 0,
+    "uiComponents": [],
+    "theme": "dark",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-AU"
+  },
+  {
+    "userId": 90,
+    "profileScore": 65,
+    "uiComponents": [
+      {
+        "id": 101,
+        "name": "NotificationBanner",
+        "version": "3.1.0",
+        "description": "A banner for displaying notifications.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cnotification-banner\u003E\u003C/notification-banner\u003E"
+      },
+      {
+        "id": 102,
+        "name": "ProfileSummary",
+        "version": "1.5.0",
+        "description": "A component for displaying user\u0027s profile summary.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cprofile-summary\u003E\u003C/profile-summary\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-AU"
+  },
+  {
+    "userId": 91,
+    "profileScore": 66,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-AU"
+  },
+  {
+    "userId": 92,
+    "profileScore": 76,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-AU"
+  },
+  {
+    "userId": 93,
+    "profileScore": 72,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "hi",
+    "localizationLanguageCode": "hi-IN"
+  },
+  {
+    "userId": 94,
+    "profileScore": 78,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-US"
+  },
+  {
+    "userId": 95,
+    "profileScore": 73,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "hi",
+    "localizationLanguageCode": "hi-IN"
+  },
+  {
+    "userId": 96,
+    "profileScore": 45,
+    "uiComponents": [
+      {
+        "id": 1,
+        "name": "SampleComponent",
+        "version": "1.0.0",
+        "description": "A sample component for demonstration.",
+        "matchingUserProfileScoreMin": 30,
+        "matchingUserProfileScoreMax": 50,
+        "componentTag": "\u003Csample-component\u003E\u003C/sample-component\u003E"
+      },
+      {
+        "id": 2,
+        "name": "ListComponent",
+        "version": "1.0.0",
+        "description": "A list component for displaying items.",
+        "matchingUserProfileScoreMin": 40,
+        "matchingUserProfileScoreMax": 55,
+        "componentTag": "\u003Clist-component\u003E\u003C/list-component\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "ja",
+    "localizationLanguageCode": "ja-JP"
+  },
+  {
+    "userId": 97,
+    "profileScore": 75,
+    "uiComponents": [],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-US"
+  },
+  {
+    "userId": 98,
+    "profileScore": 63,
+    "uiComponents": [
+      {
+        "id": 4,
+        "name": "ModalDialog",
+        "version": "1.2.0",
+        "description": "A modal dialog component for user interactions.",
+        "matchingUserProfileScoreMin": 61,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cmodal-dialog\u003E\u003C/modal-dialog\u003E"
+      }
+    ],
+    "theme": "light",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-US"
+  },
+  {
+    "userId": 99,
+    "profileScore": 75,
+    "uiComponents": [
+      {
+        "id": 1,
+        "name": "HeaderComponent",
+        "version": "1.0.0",
+        "description": "A header component for navigation.",
+        "matchingUserProfileScoreMin": 70,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cheader-component\u003E\u003C/header-component\u003E"
+      },
+      {
+        "id": 2,
+        "name": "FooterComponent",
+        "version": "1.0.0",
+        "description": "A footer component for site information.",
+        "matchingUserProfileScoreMin": 70,
+        "matchingUserProfileScoreMax": 80,
+        "componentTag": "\u003Cfooter-component\u003E\u003C/footer-component\u003E"
+      }
+    ],
+    "theme": "dark",
+    "languageCode": "hi",
+    "localizationLanguageCode": "hi-IN"
+  },
+  {
+    "userId": 100,
+    "profileScore": 0,
+    "uiComponents": [],
+    "theme": "dark",
+    "languageCode": "en",
+    "localizationLanguageCode": "en-AU"
+  }
+]

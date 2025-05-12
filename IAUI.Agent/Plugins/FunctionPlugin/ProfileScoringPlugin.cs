@@ -1,11 +1,15 @@
-using System.ComponentModel;
 using System.Text.Json;
 using IAUI.Agent.Models.Dtos;
+using Microsoft.Extensions.Options;
 using Microsoft.SemanticKernel.PromptTemplates.Handlebars;
 
 namespace IAUI.Agent.Plugins.FunctionPlugin;
 
-public class ProfileScoringPlugin(ILogger<ProfileScoringPlugin> logger)
+public class ProfileScoringPlugin(
+    ILogger<ProfileScoringPlugin> logger,
+    IOptions<OpenAIConfiguration> openAIConfiguration,
+    IOptions<ProfileScoringAlgorithmConfiguration> profileScoringAlgorithmConfiguration
+)
 {
     [KernelFunction("score_user_profile")]
     [Description("Score user profile based on various parameters. using LLM prompting.")]
@@ -25,7 +29,11 @@ public class ProfileScoringPlugin(ILogger<ProfileScoringPlugin> logger)
             AccountCreationDate = userProfile.AccountCreationDate,
             LoginHistory = userProfile.LoginHistory,
         };
-        var arguments = new KernelArguments() { { "user", user } };
+        var arguments = new KernelArguments()
+        {
+            { "user", user },
+            { "scoringAlgorithm", profileScoringAlgorithmConfiguration.Value.Algorithm },
+        };
 
         var response = await kernel.InvokeAsync(function, arguments);
 
@@ -38,6 +46,11 @@ public class ProfileScoringPlugin(ILogger<ProfileScoringPlugin> logger)
 
         var userProfileScore = JsonSerializer.Deserialize<UserProfileScore>(cleansedResponse);
         userProfileScore!.CreatedAt = DateTime.UtcNow;
+        userProfileScore!.ScoreId =
+            userProfile.ProfileScores.Length != 0
+                ? userProfile.ProfileScores.Max(x => x.ScoreId) + 1
+                : 1;
+        userProfileScore!.AIModelUsed = openAIConfiguration.Value.Model;
 
         return userProfileScore ?? throw new Exception("Failed to deserialize UserProfileScore");
     }

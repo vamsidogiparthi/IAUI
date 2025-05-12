@@ -11,7 +11,7 @@ namespace IAUI.Agent.Models
         public long ScoreId { get; set; }
 
         [JsonPropertyName("score")]
-        public int Score { get; set; }
+        public int Score { get; set; } = 0;
 
         [JsonPropertyName("category")]
         public string Category { get; set; } = string.Empty;
@@ -24,6 +24,8 @@ namespace IAUI.Agent.Models
 
         [JsonPropertyName("createdAt")]
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
+        public string AIModelUsed { get; set; } = string.Empty;
 
         public override string ToString()
         {

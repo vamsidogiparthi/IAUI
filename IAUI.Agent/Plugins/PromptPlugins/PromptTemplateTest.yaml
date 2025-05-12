@@ -1,0 +1,14 @@
+name: PromptTemplateTest
+template: |
+  <message role="system">
+  The current time is {{TimePlugin.get_time}}
+  </message>
+template_format: handlebars
+description: This is a test template to check the functionality of the PromptTemplate.
+input_variables:
+  - name: user
+    description: user profile information.
+    is_required: true
+    allow_dangerously_set_content: false
+output_variable:
+  description: The output will be in json format. It will contain the userId, profileScore, uiComponents, theme, languageCode and localizationLanguageCode.

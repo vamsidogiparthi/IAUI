@@ -19,14 +19,14 @@ template: |
       - 81-100: Very High
 
       You should also provide the reasoning behind the score you provided. 
-      What algorithms did you use to calculate the score? Use only one algorithm to calculate the score.
+      You should always use the algorithm {{scoringAlgorithm}} to calculate the score.
 
       The user profile data is as follows:
       - user DOB: {{user.DateOfBirth}}
       - user login history: {{user.LoginHistory}}     
       - userId: {{user.Id}}
       - user Login frequency: {{user.LoginTimes}}
-      - user active login time in minutes: {{user.ActiveLoginTime}}
+      - user active login time in minutes: {{user.ActiveLoginTimes}}
 
       # Example Input:
       {
@@ -349,6 +349,8 @@ template: |
       - user DOB: {{user.DateOfBirth}}
       - user login history: {{user.LoginHistory}}      
       - userId: {{user.Id}}
+      - user Login frequency: {{user.LoginTimes}}
+      - user active login time in minutes: {{user.ActiveLoginTimes}}
   </message>
 template_format: handlebars
 description: This template is to perform profile scoring of a user profile.
@@ -357,11 +359,9 @@ input_variables:
     description: User profile with login information.
     is_required: true
     allow_dangerously_set_content: false
+  - name: scoringAlgorithm
+    description: Algorithm to be used for scoring.
+    is_required: true
+    allow_dangerously_set_content: false
 output_variable:
   description: Profile score in json format.
-execution_settings:
-  service1:
-    model_id: gpt-4o
-    temperature: 0.6
-  default:
-    temperature: 0.5
